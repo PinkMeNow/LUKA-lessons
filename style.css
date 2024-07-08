@@ -1,8 +1,80 @@
 h1 {
-  color: red;
+  color: rgb(18, 68, 143);
+  margin: auto;
+  padding: auto;
+  height: 100vh;
+  align-content: center;
 }
 
 .lijeviDiv {
   float: left;
-  width: 50%;
+  max-width: 47.5vw;
+  min-width: 42vw;
+  width: 50vw;
+  height: 100vh;
+  font-size: max(min(2vw, 1vw), 75%);
 }
+
+.desniDiv {
+  float: right;
+  max-width: 47.5vw;
+  min-width: 42vw;
+  width: 50vw;
+  height: 95vh;
+  align-content: center;
+}
+
+.naslov {
+  min-width: 500px;
+  color: rgb(25, 94, 197);
+  font-size: 380%;
+  text-align: justify;
+}
+
+.zgrade {
+  max-width: 100%;
+  width: 720px;
+}
+
+@media only screen and (max-width: 1050px) {
+  h1 {
+    height: 98vh;
+    align-content: start;
+    outline: 1px solid rgb(255, 0, 0);
+  }
+
+  .lijeviDiv {
+    float: none;
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+    max-width: fit-content;
+    align-content: baseline;
+  }
+
+  .naslov {
+    text-align: left;
+    font-size: 50px;
+    text-decoration: bold;
+  }
+
+  .desniDiv {
+    width: 0%;
+    height: 0%;
+    float: none;
+    display: none;
+  }
+
+  .zgrade {
+    display: none;
+  }
+}
+
+* { outline: 5px dotted red }
+* * { outline: 5px dotted green }
+* * * { outline: 2px solid blue }
+* * * * { outline: 2px solid purple }
+* * * * * { outline: 2px solid red }
+* * * * * * { outline: 5px dotted green }
+* * * * * * * { outline: 5px dotted blue }
+* * * * * * * * { outline: 5px dotted purple }
