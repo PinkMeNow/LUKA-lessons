@@ -1,8 +1,7 @@
-h1 {
+h2 {
   color: rgb(18, 68, 143);
   margin: auto;
   padding: auto;
-  height: 100vh;
   align-content: center;
 }
 
@@ -28,7 +27,7 @@ h1 {
   min-width: 500px;
   color: rgb(25, 94, 197);
   font-size: 380%;
-  text-align: justify;
+  /*   text-align: ; */
 }
 
 .zgrade {
@@ -36,8 +35,12 @@ h1 {
   width: 720px;
 }
 
+.vertCent {
+  margin-top: 50%; /* ovog treba centrirati vertikalno */
+}
+
 @media only screen and (max-width: 1050px) {
-  h1 {
+  h2 {
     height: 98vh;
     align-content: start;
     outline: 1px solid rgb(255, 0, 0);
@@ -70,11 +73,27 @@ h1 {
   }
 }
 
-* { outline: 5px dotted red }
-* * { outline: 5px dotted green }
-* * * { outline: 2px solid blue }
-* * * * { outline: 2px solid purple }
-* * * * * { outline: 2px solid red }
-* * * * * * { outline: 5px dotted green }
-* * * * * * * { outline: 5px dotted blue }
-* * * * * * * * { outline: 5px dotted purple }
+* {
+  outline: 5px dotted red;
+}
+* * {
+  outline: 5px dotted green;
+}
+* * * {
+  outline: 2px solid blue;
+}
+* * * * {
+  outline: 2px solid purple;
+}
+* * * * * {
+  outline: 2px solid red;
+}
+* * * * * * {
+  outline: 5px dotted green;
+}
+* * * * * * * {
+  outline: 5px dotted blue;
+}
+* * * * * * * * {
+  outline: 5px dotted purple;
+}
